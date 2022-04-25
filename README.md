@@ -1,18 +1,24 @@
-# mysetup
+![image](https://user-images.githubusercontent.com/63347222/165164391-9c32302f-0859-4eea-b022-fc4c3f4bf25b.png)
 
-OS: Fedora 36 Workstation Edition 
+## Extensions
 
-DE: GNOME 42 with Dark Style
+DashToPanel, ArcMenu, PixelSaver
 
-Shell: zsh with oh-my-zsh
-Shell_theme: Powerlevel10k
-Colors: Text - #FFA800, Background - #000000
+## Terminal
 
-Cursor: Vimix
+**Shell:** oh-my-zsh + Powerlevel10k
 
-Icons: Numix
+**Colors:** Text - #FFA800, Background - #000000
 
-System and console fonts: Recursive Sans Casual
+## Fonts
+
+Recursive Sans Casual 
+
+# Intellij
+
+**Theme:** Darcula Pitch Black
+
+**Editor font:** Rec Mono Casual, 16.0
 
 
 
