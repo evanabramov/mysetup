@@ -1,25 +1,15 @@
-![image](https://user-images.githubusercontent.com/63347222/165363367-800da173-3c2b-4cdf-b62c-722150f71575.png)
+## Extensions![screenshot_20220503_225517](https://user-images.githubusercontent.com/63347222/166555535-47e27ae3-1ee4-4c50-8cb6-bf288ea39a8f.png)
 
-## Extensions
+WM: i3
 
-DashToPanel, ArcMenu, PixelSaver
+Bar: polybar
 
-## Terminal
+Terminal emulator: cool-retro-term
 
-**Shell:** oh-my-zsh + Powerlevel10k
+File manager: ranger, nautilus
 
-**Colors:** Text - #FFA800, Background - #000000
+Launcher: rofi
 
-## Fonts
+Screenshots: scrot + xclip
 
-Recursive Sans Casual 
-
-# Intellij
-
-**Theme:** Darcula Pitch Black
-
-**Editor font:** Rec Mono Casual, 16.0
-
-
-
-
+IDE: Pitch Black theme + Recursive Mono 13.0
