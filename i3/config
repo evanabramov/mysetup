@@ -41,12 +41,22 @@ exec_always --no-startup-id ~/.config/polybar/polybar.sh
 #Nitrogen 
 exec --no-startup-id nitrogen --restore
 
-default_border pixel 4
+#Keyboard layout
+exec "setxkbmap -layout us,ru"
+exec "setxkbmap -option grp:switch,grp:alt_shift_toggle us,ru"
 
-default_floating_border pixel 4
+# Multi-screen screenshots with scrot
+bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # All screens
 
+# OSX-like area selection screenshots
+bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # Area selection
+ 
+#Borders settings
+#default_border pixel 4
+#default_floating_border pixel 4
 new_window pixel 2
 new_float pixel 2
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status

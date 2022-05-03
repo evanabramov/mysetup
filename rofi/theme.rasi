@@ -47,7 +47,7 @@
   highlight: bold #ffffff;
 }
 window {
-  height: 94%;
+  height: 94.4%;
   width: 20em;
   location: west;
   anchor: west;
