@@ -38,10 +38,13 @@ exec --no-startup-id nm-applet
 # Polybar start-up 
 exec_always --no-startup-id ~/.config/polybar/polybar.sh
 
-#Nitrogen 
+# Nitrogen 
 exec --no-startup-id nitrogen --restore
 
-#Keyboard layout
+# Picom 
+exec_always --no-startup-id picom
+
+# Keyboard layout
 exec "setxkbmap -layout us,ru"
 exec "setxkbmap -option grp:switch,grp:alt_shift_toggle us,ru"
 
@@ -51,7 +54,8 @@ bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~
 # OSX-like area selection screenshots
 bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # Area selection
  
-#Borders settings
+#Border settings
+
 #default_border pixel 4
 #default_floating_border pixel 4
 new_window pixel 2
@@ -68,7 +72,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec cool-retro-term
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill

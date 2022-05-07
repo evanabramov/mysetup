@@ -147,4 +147,6 @@ configuration {
       sorting-method:    "name";
   }
 }
-@theme "~/.config/rofi/theme.rasi"
+//@theme "~/.config/rofi/theme.rasi"
+//@theme "/usr/share/rofi/themes/DarkBlue.rasi"
+@theme "/usr/share/rofi/themes/DarkBlue.rasi"
