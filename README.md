@@ -1,15 +1,18 @@
-## Extensions![screenshot_20220503_225517](https://user-images.githubusercontent.com/63347222/166555535-47e27ae3-1ee4-4c50-8cb6-bf288ea39a8f.png)
+
+![screenshot_20220507_105603](https://user-images.githubusercontent.com/63347222/167250736-6237bfa1-cf4e-48b8-b808-c0d4183d2508.png)
 
 WM: i3
 
-Bar: polybar
+bar: polybar
 
-Terminal emulator: cool-retro-term
+terminal: alacritty
 
-File manager: ranger, nautilus
+file managers: ranger, nautilus
 
-Launcher: rofi
+launcher: rofi
 
-Screenshots: scrot + xclip
+screenshots: scrot + xclip
+
+composer: picom
 
 IDE: Pitch Black theme + Recursive Mono 13.0
