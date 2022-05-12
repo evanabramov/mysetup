@@ -1,5 +1,4 @@
-
-![screenshot_20220507_105603](https://user-images.githubusercontent.com/63347222/167250736-6237bfa1-cf4e-48b8-b808-c0d4183d2508.png)
+![screenshot_20220512_113953](https://user-images.githubusercontent.com/63347222/168029404-a680925c-2413-475b-9c22-f62788060da5.png)
 
 WM: i3
 
