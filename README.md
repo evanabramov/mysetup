@@ -23,3 +23,7 @@ Currently using Arch with GNOME 42.1(can be easily installed with archinstall)
 And slightly modified DTOS
 
 ![image](https://user-images.githubusercontent.com/63347222/170149967-62d0da46-8279-4873-95af-5ddb2051b10c.png)
+
+Currently stick to Arch + Gnome with Gruvbox theme.
+
+![image](https://user-images.githubusercontent.com/63347222/172941861-a822f2e5-d8f7-41e3-aedf-02b28693a535.png)
