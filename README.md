@@ -27,3 +27,39 @@ And slightly modified DTOS
 Currently stick to Arch + Gnome with Gruvbox theme.
 
 ![image](https://user-images.githubusercontent.com/63347222/172941861-a822f2e5-d8f7-41e3-aedf-02b28693a535.png)
+
+Some void linux notes:
+
+a. when setting up pipewire, use elogind
+
+b. pipewire itself :
+
+Install pipewire:
+
+xbps-install pipewire alsa-pipewire 
+(libpulseaudio-pipewire is NOT needed. In fact, it appears to have been removed from the repos.)
+
+idk if all this needed if no pulseaudio is installed tho
+
+Uncomment the following line in /etc/pipewire/pipewire.conf:
+
+#"/usr/bin/pipewire" = { args = "-c pipewire-pulse.conf" }
+
+Run these commands:
+
+mkdir -p /etc/alsa/conf.d
+ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
+ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
+Edit /etc/pulse/client.conf and replace the following line:
+
+; autospawn = yes
+
+With:
+
+autospawn = no
+
+Finally, set Pipewire to start when you start a user session/log in. 
+
+c. lightdm and lightdm-gtk3-greeter alongside i3
+
+d. ad nonfree repos for intellij
