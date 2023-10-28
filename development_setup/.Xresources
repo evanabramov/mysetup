@@ -1,0 +1,38 @@
+Xft.dpi: 192
+
+! special
+*.foreground:   #ff8200
+*.background:   #000000
+*.cursorColor:  #ff8200
+
+! black
+*.color0:       #b8515c
+*.color8:       #d3e73f
+
+! red
+*.color1:       #ffd766
+*.color9:       #00ff03
+
+! green
+*.color2:       #9f6064
+*.color10:      #a2413c
+
+! yellow
+*.color3:       #ff7926
+*.color11:      #62e064
+
+! blue
+*.color4:       #ff89b0
+*.color12:      #d6bc70
+
+! magenta
+*.color5:       #871d24
+*.color13:      #47dc4a
+
+! cyan
+*.color6:       #c3acae
+*.color14:      #ff73b3
+
+! white
+*.color7:       #896262
+*.color15:      #1bdcff
