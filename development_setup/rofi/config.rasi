@@ -1,0 +1,6 @@
+configuration {
+  modi: "window";
+  font: "RecMonoCasual 12";
+}
+
+@theme "saturerate"
