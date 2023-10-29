@@ -1,0 +1,96 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 1
+#    color_good =     '#88b090'  
+ #   color_degraded = '#ccdc90'  
+  #  color_bad =      '#e89393'   
+	color_good = "#aaff00"
+        color_degraded = "#00dddd"
+        color_bad = "#ff2200"
+}
+
+order += "volume master"
+order += "wireless _first_"
+order += "disk /"
+order += "disk /home"
+order += "cpu_usage"
+order += "cpu_temperature 0"
+order += "memory"
+order += "battery all"
+order += "tztime localdate"
+order += "tztime localtime"
+
+wireless _first_ {
+        format_up = " %quality %frequency "
+        format_down = "W: down"
+}
+
+volume master {
+    format = "  %volume "
+    format_muted = "  %volume "
+    #format_muted = " ﱝ %volume "
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+battery all {
+        format = " %status %percentage %remaining "
+	last_full_capacity = false
+	threshold_type = "percentage"
+	low_threshold = "20"
+	format_down = "No battery"
+	status_chr = "🔋 CHR"
+ 	status_bat = "🔋 BAT"
+	status_full = "🔋 FULL"
+}
+
+disk "/" {
+        format = "   %avail "
+	low_threshold = "10"
+	threshold_type = "gbytes_avail"
+	format_below_threshold = "Warning: %avail"
+}
+
+disk "/home" {
+        format = "   %avail "
+        prefix_type = custom
+}
+
+
+memory {
+        format = "   %used "
+        threshold_degraded = "1G"
+	threshold_critical = "200M"
+	format_degraded = "MEMORY < %available"
+}
+
+tztime local {
+        format = "  %Y-%m-%d  %H:%M "
+}
+
+cpu_usage {
+        format = " ⏳ %usage "
+}
+
+cpu_temperature 0 {
+        format = "   %degrees °C "
+        max_threshold = 70
+	path = "/sys/class/thermal/thermal_zone0/temp"
+}
+
+tztime localdate {
+        format = "   %Y-%m-%d "
+}
+
+tztime localtime {
+        format = "   %H:%M "
+}
